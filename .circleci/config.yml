@@ -14,3 +14,9 @@ jobs:
       - checkout
       - run: echo "Another hello from here"
       - run: sleep 15
+workflows:
+  version: 2
+  one_n_two:
+    jobs:
+      - one
+      - two
